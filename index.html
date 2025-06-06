@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Your name" />
+    <button onclick="startQuiz()"class="btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Box -->
+  <div id="quiz-box" class="hide">
+    <div id="question-box">
+      <h2 id="question">Question comes here</h2>
+      <div id="options">
+        <!-- Options will be added using JavaScript -->
+      </div>
+    </div>
+    <p>Time Left: <span id="timer">15</span> sec</p>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="result-screen" class="hide">
+    <h2>Quiz Finished</h2>
+    <p id="final-score"></p>
+    <button onclick="restartQuiz()"class="reset">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
